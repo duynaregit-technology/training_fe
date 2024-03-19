@@ -1,0 +1,43 @@
+@mixin Responsive($screen) {
+  @if $screen == XS {
+    @media only screen and (max-width: $XS) {
+      @content;
+    }
+  }
+
+  @else if $screen == SM {
+    @media only screen and (max-width: $SM) {
+      @content;
+    }
+  }
+
+  @else if $screen == MD {
+    @media only screen and (max-width: $MD) {
+      @content;
+    }
+  }
+
+  @else if $screen == XL {
+    @media only screen and (max-width: $XL) {
+      @content;
+    }
+  }
+}
+
+@mixin center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin setHeightWidth($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin setFont($size, $weight) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+}
