@@ -229,6 +229,12 @@ header .header-content .right-header .icon {
   outline: none;
   width: 100%;
 }
+.main-body .content .sidebar-content form .search-bar input[type=text]::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 15px;
+}
 .main-body .content .sidebar-content form .search-bar img {
   width: 19px;
   height: 19px;
@@ -495,6 +501,7 @@ footer {
 .modal form .search .search-bar .input-search-bar input[type=text]::placeholder {
   font-size: 16px;
   font-weight: 400;
+  color: #000000;
   margin-left: 15px;
 }
 .modal form .search .search-bar .input-search-bar input {

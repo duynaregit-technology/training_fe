@@ -209,6 +209,12 @@ header {
             width: 100%;
           }
 
+          input[type="text"]::placeholder {
+            @include setFont(16px, 400);
+            color: $color-1;
+            margin-left: 15px;
+          }
+
           img {
             width: 19px;
             height: 19px;
@@ -481,6 +487,7 @@ footer {
 
           input[type="text"]::placeholder {
             @include setFont(16px, 400);
+            color: $color-1;
             margin-left: 15px;
           }
 
