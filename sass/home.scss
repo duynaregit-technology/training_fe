@@ -275,40 +275,42 @@ header {
 
     .main-content {
       @include Responsive(XS) {
+        @include center();
         max-width: 100%;
-        margin-top: 15px;
+        margin: 20px 0 0 0;
       }
 
       @include Responsive(SM) {
+        @include center();
         max-width: 100%;
-        margin-top: 15px;
+        margin: 20px 0 0 0;
       }
 
       max-width: 70%;
       display: flex;
       flex-direction: column;
+      margin:0 0 60px 50px;
 
       .blog-content {
         @include Responsive(XS) {
-          max-width: 100%;
+          max-width: 90%;
           margin: 0;
+          margin-bottom: 45px;
         }
 
-        margin:0 0 60px 50px;
+        max-width: 90%;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.16);
+        padding-bottom: 20px;
+        margin-bottom: 30px;
 
         .blog-item {
           @include Responsive(XS) {
-            max-width: 90%;
             position: relative;
             left: 50%;
             transform: translate(-50%, 0);
             margin-bottom: 45px;
           }
-
-          max-width: 90%;
-          border: 1px solid rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.16);
-          padding-bottom: 20px;
 
           img {
             @include Responsive(XS) {
@@ -403,6 +405,11 @@ header {
 
         padding-bottom: 50px;
         margin: 40px 0;
+        max-width: 90%;
+
+        #nextIcon {
+          margin-left: 0;
+        }
 
         .pagination {
           @include setFont(20px, 700);
