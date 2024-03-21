@@ -15,8 +15,6 @@ header {
   }
 
   max-width: 100%;
-  margin-bottom: 60px;
-  z-index: 10;
 
   .header-content {
     @include Responsive(XS) {
@@ -31,6 +29,7 @@ header {
       margin: 30px 0 25px 0;
     }
 
+    padding: 10px 0;
     max-width: 100%;
     display: flex;
     justify-content:space-between;
@@ -38,7 +37,7 @@ header {
     margin:20px 0;
 
     .icon-menu {
-      margin-left: 10px;
+      margin-left: 8%;
     }
 
     .left-header {
@@ -99,7 +98,7 @@ header {
         border-radius: 3px;
         background-color: $color-4;
         color: $color-2;
-        margin-left: 0;
+        cursor: pointer;
       }
 
       .text-header {
@@ -162,12 +161,12 @@ header {
   }
 
   .icon-filter {
+    width: 90%;
     margin-bottom: 40px;
     text-align: right;
 
     img {
       float: right;
-      margin-right: 10%;
     }
   }
 
@@ -177,6 +176,7 @@ header {
     height: auto;
     color: $color-1;
     margin-top: 20px;
+    margin-bottom: 40px;
 
     .sidebar-content {
       @include Responsive(XS) {
@@ -189,20 +189,22 @@ header {
 
       position: relative;
       max-width: 30%;
-      padding-right: 5%;
+      padding-right: 3%;
       margin-left: 10%;
 
       form {
+        border-right: 2px solid;
+
         .search-bar {
           @include center();
           @include setFont(16px, 400);
-          max-width: 100%;
+          width: 90%;
           border: 1px solid $color-6;
           border-radius: 8px;
           padding: 10px;
 
           input {
-            @include setFont(16px, 600);
+            @include setFont(16px, 400);
             outline: none;
             width: 100%;
           }
@@ -216,7 +218,7 @@ header {
         }
 
         .horizontal-line {
-          width: 110%;
+          width: 100%;
           border: 1px solid $color-1;
           margin: 10px 0 10px 0;
         }
@@ -249,8 +251,6 @@ header {
             input[type="checkbox"] {
               width: 16px;
               height: 16px;
-              appearance: none;
-              -webkit-appearance: none;
               border: 1px solid $color-1;
               border-radius: 0;
               margin-right: 10px;
@@ -302,7 +302,7 @@ header {
 
           max-width: 90%;
           border: 1px solid rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 24px 48px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.16);
           padding-bottom: 20px;
 
           img {
@@ -318,10 +318,11 @@ header {
           }
 
           .description {
-            margin: 10px 0 0 25px;
+            margin: 10px 30px 0;
 
             .item-info {
               display: flex;
+              margin-top: 20px;
 
               .info-blog {
                 @include center();
@@ -357,13 +358,13 @@ header {
         .title {
           @include setFont(30px, 700);
           line-height: 36px;
-          margin: 5px 0;
+          margin: 20px 0 0;
         }
 
         p {
           @include setFont(16px, 400);
           line-height: 18.75px;
-          margin-bottom: 10px;
+          margin: 20px 0 20px;
         }
 
         .read-more {
@@ -373,6 +374,8 @@ header {
           color: $color-5;
           border: 1px solid $color-6;
           border-radius: 4px;
+          cursor: pointer;
+          margin-bottom: 15px;
 
           img {
             width: 18px;
@@ -381,27 +384,38 @@ header {
           }
         }
       }
-    }
-  }
 
-  .paginate {
-    @include center();
-    padding-bottom: 50px;
+      .paginate {
+        @include center();
 
-    .pagination {
-      @include setFont(20px, 700);
-      margin-left: 20px;
-      color: $color-7;
-    }
+        @include Responsive(XS) {
+          margin: 5px 0 50px;
+        }
 
-    .circle {
-      @include center();
-      width: 32px;
-      height: 32px;
-      color: $color-5;
-      border: 1px solid $color-8;
-      border-radius: 50%;
-      background-color: $color-8;
+        @include Responsive(SM) {
+          margin: 5px 0 50px;
+        }
+
+        padding-bottom: 50px;
+        margin: 40px 0;
+
+        .pagination {
+          @include setFont(20px, 700);
+          cursor: pointer;
+          margin-left: 20px;
+          color: $color-7;
+        }
+
+        .circle {
+          @include center();
+          width: 32px;
+          height: 32px;
+          color: $color-5;
+          border: 1px solid $color-8;
+          border-radius: 50%;
+          background-color: $color-8;
+        }
+      }
     }
   }
 }

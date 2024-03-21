@@ -15,8 +15,6 @@
 
 header {
   max-width: 100%;
-  margin-bottom: 60px;
-  z-index: 10;
 }
 @media only screen and (max-width: 480px) {
   header {
@@ -31,6 +29,7 @@ header {
   }
 }
 header .header-content {
+  padding: 10px 0;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
@@ -52,7 +51,7 @@ header .header-content {
   }
 }
 header .header-content .icon-menu {
-  margin-left: 10px;
+  margin-left: 8%;
 }
 header .header-content .left-header {
   margin-left: 10%;
@@ -120,7 +119,7 @@ header .header-content .right-header .btn {
   border-radius: 3px;
   background-color: #770303;
   color: #FFFFFF;
-  margin-left: 0;
+  cursor: pointer;
 }
 header .header-content .right-header .text-header {
   font-size: 15px;
@@ -179,12 +178,12 @@ header .header-content .right-header .icon {
   margin-bottom: 30px;
 }
 .main-body .icon-filter {
+  width: 90%;
   margin-bottom: 40px;
   text-align: right;
 }
 .main-body .icon-filter img {
   float: right;
-  margin-right: 10%;
 }
 .main-body .content {
   display: flex;
@@ -192,11 +191,12 @@ header .header-content .right-header .icon {
   height: auto;
   color: #000000;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 .main-body .content .sidebar-content {
   position: relative;
   max-width: 30%;
-  padding-right: 5%;
+  padding-right: 3%;
   margin-left: 10%;
 }
 @media only screen and (max-width: 480px) {
@@ -209,20 +209,23 @@ header .header-content .right-header .icon {
     display: none;
   }
 }
+.main-body .content .sidebar-content form {
+  border-right: 2px solid;
+}
 .main-body .content .sidebar-content form .search-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   font-weight: 400;
-  max-width: 100%;
+  width: 90%;
   border: 1px solid #202E33;
   border-radius: 8px;
   padding: 10px;
 }
 .main-body .content .sidebar-content form .search-bar input {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   outline: none;
   width: 100%;
 }
@@ -233,7 +236,7 @@ header .header-content .right-header .icon {
   margin-right: 5px;
 }
 .main-body .content .sidebar-content form .horizontal-line {
-  width: 110%;
+  width: 100%;
   border: 1px solid #000000;
   margin: 10px 0 10px 0;
 }
@@ -262,8 +265,6 @@ header .header-content .right-header .icon {
 .main-body .content .sidebar-content form .categories li input[type=checkbox] {
   width: 16px;
   height: 16px;
-  appearance: none;
-  -webkit-appearance: none;
   border: 1px solid #000000;
   border-radius: 0;
   margin-right: 10px;
@@ -302,7 +303,7 @@ header .header-content .right-header .icon {
 .main-body .content .main-content .blog-content .blog-item {
   max-width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 24px 48px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.16);
   padding-bottom: 20px;
 }
 @media only screen and (max-width: 480px) {
@@ -327,10 +328,11 @@ header .header-content .right-header .icon {
   }
 }
 .main-body .content .main-content .blog-content .blog-item .description {
-  margin: 10px 0 0 25px;
+  margin: 10px 30px 0;
 }
 .main-body .content .main-content .blog-content .blog-item .description .item-info {
   display: flex;
+  margin-top: 20px;
 }
 .main-body .content .main-content .blog-content .blog-item .description .item-info .info-blog {
   display: flex;
@@ -363,13 +365,13 @@ header .header-content .right-header .icon {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  margin: 5px 0;
+  margin: 20px 0 0;
 }
 .main-body .content .main-content .blog-content p {
   font-size: 16px;
   font-weight: 400;
   line-height: 18.75px;
-  margin-bottom: 10px;
+  margin: 20px 0 20px;
 }
 .main-body .content .main-content .blog-content .read-more {
   display: flex;
@@ -380,25 +382,39 @@ header .header-content .right-header .icon {
   color: #C40000;
   border: 1px solid #202E33;
   border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
 }
 .main-body .content .main-content .blog-content .read-more img {
   width: 18px;
   height: 8px;
   margin-left: 10px;
 }
-.main-body .paginate {
+.main-body .content .main-content .paginate {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
+  margin: 40px 0;
 }
-.main-body .paginate .pagination {
+@media only screen and (max-width: 480px) {
+  .main-body .content .main-content .paginate {
+    margin: 5px 0 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-body .content .main-content .paginate {
+    margin: 5px 0 50px;
+  }
+}
+.main-body .content .main-content .paginate .pagination {
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
   margin-left: 20px;
   color: #211E3B;
 }
-.main-body .paginate .circle {
+.main-body .content .main-content .paginate .circle {
   display: flex;
   align-items: center;
   justify-content: center;
