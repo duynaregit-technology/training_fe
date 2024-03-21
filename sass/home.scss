@@ -211,7 +211,7 @@ header {
 
           input[type="text"]::placeholder {
             @include setFont(16px, 400);
-            color: $color-1;
+            color: red;
             margin-left: 15px;
           }
 

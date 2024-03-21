@@ -232,7 +232,7 @@ header .header-content .right-header .icon {
 .main-body .content .sidebar-content form .search-bar input[type=text]::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #000000;
+  color: red;
   margin-left: 15px;
 }
 .main-body .content .sidebar-content form .search-bar img {
