@@ -197,7 +197,7 @@ header {
           @include center();
           @include setFont(16px, 400);
           max-width: 100%;
-          border: 1px solid #202E33;
+          border: 1px solid $color-6;
           border-radius: 8px;
           padding: 10px;
 
@@ -370,8 +370,8 @@ header {
           @include center();
           width: 137px;
           height: 40px;
-          color: #C40000;
-          border: 1px solid #202E33;
+          color: $color-5;
+          border: 1px solid $color-6;
           border-radius: 4px;
 
           img {
@@ -391,16 +391,17 @@ header {
     .pagination {
       @include setFont(20px, 700);
       margin-left: 20px;
-      color: #211E3B;
+      color: $color-7;
     }
 
     .circle {
       @include center();
       width: 32px;
       height: 32px;
-      border: 1px solid #FFE4E4;
+      color: $color-5;
+      border: 1px solid $color-8;
       border-radius: 50%;
-      background-color: #FFE4E4;
+      background-color: $color-8;
     }
   }
 }
@@ -459,7 +460,7 @@ footer {
 
         .input-search-bar {
           @include center();
-          border: 1px solid #202E33;
+          border: 1px solid $color-6;
           border-radius: 8px;
           width: 90%;
           padding: 4px;
@@ -517,13 +518,13 @@ footer {
     }
 
     &-cancel {
-      border: 1px solid #666666;
-      background-color: #666666;
+      border: 1px solid $color-9;
+      background-color: $color-9;
     }
 
     &-search {
-      border: 1px solid #4C9FFF;
-      background-color: #4C9FFF;
+      border: 1px solid $color-10;
+      background-color: $color-10;
     }
   }
 }
